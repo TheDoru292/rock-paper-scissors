@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rock, paper, scissors - Console Version</title>
+    </head>
+
+    <body>
+        <script>
+            let playerSelection;
+            let computerSelection;
+
+            function computerChoice() {
+                let number = Math.floor(Math.random() * 3) + 1;
+                if(number = 1) {
+                    computerSelection = "Rock";
+                } else if (number = 2) {
+                    computerSelection = "Paper";
+                } else {
+                    computerSelection = "Scissors";
+                }
+            }
+
+            function playerChoice() {
+                let choice = prompt("Please choose between: Rock, Paper, Scissors.").toLowerCase();
+                console.log(choice);
+                if(choice === "rock") {
+                    playerSelection = "rock";
+
+                } else if (choice === "paper") {
+                    playerSelection = "paper";
+
+                } else if (choice === "scissors") {
+                    playerSelection = "scissors"
+
+                } else {
+                    console.log("Please enter a real value!");
+                    playerChoice();
+                }
+            }
+            
+        </script>
+    </body>
+</html>
