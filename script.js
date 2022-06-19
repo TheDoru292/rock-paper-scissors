@@ -42,11 +42,3 @@ function checkForWinner(npc, player) {
         return `You lose! ${npc} beats ${player}!`;
     }
 }
-
-function game() {
-    for(let i = 0; 5 > i; i++) {
-        playRound();
-    }
-}
-
-game();
